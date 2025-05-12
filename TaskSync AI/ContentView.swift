@@ -93,7 +93,7 @@ struct ContentView: View {
         .accentColor(.blue)
     }
 
-    // MARK: - Computed Properties
+    // Priority Functions
 
     private var sortedGroupedTasks: [String: [Task]] {
         Dictionary(grouping: tasks, by: { $0.group }).mapValues { groupTasks in
